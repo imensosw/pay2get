@@ -1,0 +1,246 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #333;
+}
+
+.pad_0{
+	padding: 0;
+}
+.main_content {
+    background: rgba(0, 0, 0, 0) url("images/banner2.jpeg") repeat scroll center center / cover ;
+    color: #fff;
+    min-height: 653px;
+	position: relative;
+}
+.layer{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.2);
+}
+.form_wrp {
+    align-items: center;
+    display: flex;
+    min-height: 650px;
+}
+.form_main {
+box-shadow: 2px 1px 12px #666;
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    margin-left: 4.5em;
+    min-height: 200px;
+    width: 250px;
+}
+.uplod_input input{
+display: none;
+}
+.uplod_input input:focus{
+		display: block;
+}
+
+.upload_pls {
+    align-items: center;
+    background: #409fff none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 1.7em;
+    font-weight: lighter;
+    height: 35px;
+    justify-content: center;
+    transition: background 0.3s ease-in-out 0s;
+    width: 35px;
+    float: left;
+    margin: .2em 0.5em 0 0;
+}
+.uplod_input label:hover .upload_pls{
+	background: #0073E5;
+}
+.uplod_input{
+	transition: all .3s ease-in-out;
+	position: relative;
+}
+.uplod_input label{
+	margin: 0;
+	width: 100%;
+    min-height: 130px;
+    cursor: pointer;
+    padding: 3em 1.5em 0;
+    position: relative;
+
+}
+.form_input{
+	border: 1px solid #ddd;
+	border-width: 1px 0 1px ; 
+	padding: 0 1em;
+}
+.form_input input{
+	border: 1px solid #ddd;
+	border-width: 0px 0 1px; 
+	padding: .8em;
+	width: 100%;	
+}		
+.form_input textarea{
+	padding: .8em;
+	width: 100%;
+	border: none;
+}
+.uplod_input aside {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: capitalize;
+    transform: translateY(20%);
+    transition: all 0.3s ease-in-out 0s;
+}
+.uplod_input:hover aside{
+		transform: translateY(0%);
+}
+.uplod_input p {
+    color: #888;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(-40%);
+    transition: all 0.3s ease-in-out 0s;
+}
+.uplod_input:hover p {
+    opacity: 1;
+    transform: translateY(-20%);
+}
+.link_btn {
+    display: inline-block;
+    height: 30px;
+    margin: 0.3em 1em 0 0;
+    width: 30px;
+}
+.link_btn img {
+    border: 3px solid #D4D7D9;
+    border-radius: 50%;
+    height: 100%;
+    padding: 0.3em;
+    width: 100%;
+    cursor: pointer;
+}
+.form_footer {
+    margin: 1em 0;
+    text-align: center;
+}
+.tranfer_btn{
+    background: #D4D7D9 none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding: 0.3em 2.5em;
+    transition: all cubic-bezier(.35,.32,.45,.91) .3s;
+        border: medium none;
+}
+.tranfer_btn:hover{
+	color: #888;
+	text-decoration: none;
+}
+.sucess_msg {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 2px 1px 12px #666;
+    color: green;
+    display: block;
+    font-size: 1.2em;
+    left: 32%;
+    padding: 1em;
+    position: absolute;
+    top: 5%;
+    width: 34%;
+}
+.choos_file {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    overflow-wrap: break-word;
+    padding: 0 1.5em;
+}
+.loading-image {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+    background-color: rgba(255,255,255,0.7);
+}
+.loader {
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 90px;
+}
+
+.formarea{
+ width:60%;
+ margin:0 auto;
+ background-color:#6082bb; 
+ text-align:center;
+ padding:4%;
+ border-radius:5px;
+}
+ 
+
+ 
+#bar{
+ width:1%;
+ margin:4px 0;
+ height:32px;
+ background-color:#FFFFFF;
+}
+ 
+#status{
+ color:#ffffff;
+}
+#bararea {
+    border: 2px solid #ffffff;
+    height: 40px;
+    margin: 17px auto;
+    width: 50%;
+    display:none;
+}
+.select_bar select {
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #eee;
+    padding: 0em 0.6em;
+    width: 100%;
+}
+.select_bar{
+    position: relative;
+}
+.select_bar::after {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ddd;
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 5px;
+}
+.select_bar option{
+     padding: 0.4em 0.9em;     
+}
+.select_bar option:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.site_logo {
+    height: 65px;
+    margin: 2.5em 0 0 4.5em;
+    width: 65px;
+}
+.site_logo > img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.loading_per {
+    font-size: 1.2em;
+    margin-top: 0.3em;
+}
